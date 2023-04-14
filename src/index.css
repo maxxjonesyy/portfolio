@@ -13,6 +13,6 @@
     @apply p-8;
   }
   .container-width {
-    @apply mx-auto max-w-[100rem];
+    @apply mx-auto max-w-[75rem];
   }
 }
