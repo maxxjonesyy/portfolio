@@ -22,11 +22,11 @@ function App() {
 
       <div
         id='hero'
-        className='relative flex flex-col items-center justify-center flex-1 w-full mb-20 bg-lightBg dark:bg-darkBg container-padding container-width md:flex-row md:justify-between'
+        className='relative flex flex-col items-center justify-center flex-1 w-full bg-lightBg dark:bg-darkBg container-padding container-width md:flex-row md:justify-between'
       >
         <div
           id='hero-animation'
-          className='w-2/3 max-w-[550px] md:w-1/2 md:order-2'
+          className='w-2/3 max-w-[450px] md:w-1/2 md:order-2 2xl:max-w-[550px]'
         >
           <Player
             src={heroAnimation}
@@ -43,7 +43,7 @@ function App() {
           <h1 className='text-xl text-lightText dark:text-darkText md:text-3xl xl:text-4xl'>
             Hello my name is
           </h1>
-          <h1 className='text-4xl font-semibold text-accent md:text-5xl md:pt-1.5 xl:text-5xl'>
+          <h1 className='text-4xl font-semibold text-accent md:text-4xl md:pt-1.5 xl:text-5xl'>
             Maxwell Jones,
           </h1>
           <h1 className='text-xl text-lightText dark:text-darkText md:text-3xl md:pt-1.5 xl:text-4xl'>
