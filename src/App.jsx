@@ -2,19 +2,14 @@ import React, { useEffect, useState } from "react";
 import { Player } from "@lottiefiles/react-lottie-player";
 
 import heroAnimation from "./assets/hero-animation.json";
+import { setInitialTheme } from "./utils/theme";
 import Navbar from "./components/Navbar";
 
 function App() {
   const [theme, setTheme] = useState(localStorage.theme || "dark");
 
   useEffect(() => {
-    if (theme === "dark") {
-      document.documentElement.classList.add("dark");
-      localStorage.theme = "dark";
-    } else {
-      document.documentElement.classList.remove("dark");
-      localStorage.theme = "light";
-    }
+    setInitialTheme(theme);
   }, [theme]);
 
   function handleThemeSwitch() {
