@@ -27,7 +27,7 @@ function App() {
 
       <div
         id='hero'
-        className='relative flex flex-col items-center justify-center flex-1 w-full mb-20 container-padding container-width md:flex-row md:justify-between'
+        className='relative flex flex-col items-center justify-center flex-1 w-full mb-20 bg-lightBg dark:bg-darkBg container-padding container-width md:flex-row md:justify-between'
       >
         <div
           id='hero-animation'
@@ -45,16 +45,16 @@ function App() {
         </div>
 
         <div className='flex flex-col justify-center h-full mt-10'>
-          <h1 className='text-xl text-lightText dark:text-darkText md:text-3xl lg:text-4xl xl:text-5xl'>
+          <h1 className='text-xl text-lightText dark:text-darkText md:text-3xl xl:text-4xl'>
             Hello my name is
           </h1>
-          <h1 className='text-4xl font-semibold text-accent md:text-5xl lg:5xl md:pt-1.5 xl:text-6xl'>
+          <h1 className='text-4xl font-semibold text-accent md:text-5xl md:pt-1.5 xl:text-5xl'>
             Maxwell Jones,
           </h1>
-          <h1 className='text-xl text-lightText dark:text-darkText md:text-3xl lg:text-4xl md:pt-1.5 xl:text-5xl'>
+          <h1 className='text-xl text-lightText dark:text-darkText md:text-3xl md:pt-1.5 xl:text-4xl'>
             I build cool things for the internet.
           </h1>
-          <p className='mt-5 text-sm font-light md:mt-10 text-lightText dark:text-darkText md:text-base lg:text-lg md:w-2/3'>
+          <p className='mt-5 text-sm font-light md:mt-10 text-lightText dark:text-darkText md:text-base md:w-2/3 lg:text-lg '>
             I’m a self-taught Frontend Developer based in Sydney. Bringing
             conceptual ideas and designs to life.
           </p>
