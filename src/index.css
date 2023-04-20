@@ -6,6 +6,7 @@
 
 :root {
   font-family: "Rubik", sans-serif;
+  scroll-behavior: smooth;
 }
 
 @layer components {
@@ -13,6 +14,6 @@
     @apply p-8;
   }
   .container-width {
-    @apply mx-auto max-w-[75rem];
+    @apply mx-auto max-w-[90rem];
   }
 }
