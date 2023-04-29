@@ -23,7 +23,7 @@ function Hero() {
         />
       </div>
 
-      <div className='flex flex-col justify-center h-full mt-10'>
+      <div className='flex flex-col justify-center mt-10'>
         <h1 className='text-xl text-lightText dark:text-darkText md:text-3xl xl:text-4xl'>
           Hello my name is
         </h1>
