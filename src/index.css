@@ -9,6 +9,10 @@
   scroll-behavior: smooth;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 @layer components {
   .container-padding {
     @apply p-8;
