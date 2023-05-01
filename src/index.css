@@ -14,10 +14,15 @@ body {
 }
 
 @layer components {
-  .container-padding {
+  .navbar-padding {
     @apply p-8;
   }
+
+  .container-padding {
+    @apply pt-[15%] pb-[15%] pl-8 pr-8;
+  }
+
   .container-width {
-    @apply mx-auto max-w-[90rem];
+    @apply mx-auto max-w-[75rem];
   }
 }
