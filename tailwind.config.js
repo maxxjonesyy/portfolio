@@ -11,7 +11,7 @@ export default {
         lightBg: "#f5f5f5",
         accent: "#8A61FF",
         darkTile: "#2b2b2b",
-        lightTile: "#f0f0f0",
+        lightTile: "#ebebeb",
       },
     },
   },
