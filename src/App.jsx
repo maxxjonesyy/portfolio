@@ -18,11 +18,11 @@ function App() {
 
   return (
     <div className='max-h-screen max-w-screen bg-lightBg dark:bg-darkBg'>
-      <div className='fixed z-10 w-full'>
+      <div className='fixed top-0 z-10 w-full'>
         <Navbar handleThemeSwitch={handleThemeSwitch} theme={theme} />
       </div>
       <Hero />
-      <About />
+      <About theme={theme} />
     </div>
   );
 }

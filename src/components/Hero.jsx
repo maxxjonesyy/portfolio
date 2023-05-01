@@ -6,7 +6,7 @@ function Hero() {
   return (
     <div
       id='hero'
-      className='flex flex-col items-center justify-center flex-1 w-screen h-screen pt-[25%] bg-lightBg dark:bg-darkBg container-padding container-width md:flex-row md:justify-between md:pt-0'
+      className='flex flex-col items-center justify-center flex-1 h-full mt-[10%] bg-lightBg dark:bg-darkBg container-padding container-width md:flex-row md:justify-between md:pt-0'
     >
       <div
         id='hero-animation'
@@ -39,9 +39,9 @@ function Hero() {
         </p>
         <a
           href=''
-          className='w-40 p-1.5 mt-10 text-lg text-center transition duration-300 ease-in-out border-2 rounded-md text-lightText dark:text-darkText border-accent text-textLight hover:bg-accent hover:text-white hover:scale-105'
+          className='w-40 p-1.5 mt-10 text-lg text-center transition duration-300 ease-in-out border-2 rounded-md text-lightText dark:text-darkText hover:text-white border-accent hover:bg-accent'
         >
-          Projects
+          {`< Projects />`}
         </a>
       </div>
     </div>

@@ -26,7 +26,7 @@ function Navbar({ handleThemeSwitch, theme }) {
       id='navbar'
       className='relative transition-all duration-300 ease-in-out'
     >
-      <div className='flex items-center justify-between w-full container-padding container-width'>
+      <div className='flex items-center justify-between w-full navbar-padding container-width'>
         <h1 className='text-3xl font-semibold text-accent md:text-4xl lg:text-5xl'>
           MJ.
         </h1>
