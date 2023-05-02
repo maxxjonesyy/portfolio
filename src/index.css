@@ -19,10 +19,10 @@ body {
   }
 
   .container-padding {
-    @apply pt-[15%] pb-[15%] pl-8 pr-8;
+    @apply pt-20 pb-20 pl-8 pr-8;
   }
 
   .container-width {
-    @apply mx-auto max-w-[75rem];
+    @apply mx-auto max-w-[80rem];
   }
 }
