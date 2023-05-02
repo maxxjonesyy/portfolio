@@ -8,7 +8,9 @@ function Tile({ skill }) {
         alt={skill}
         className='w-4'
       />
-      <p className='text-lightText dark:text-darkText'>{skill}</p>
+      <p className='text-sm text-lightText dark:text-darkText md:text-base'>
+        {skill}
+      </p>
     </div>
   );
 }
