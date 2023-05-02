@@ -33,7 +33,11 @@ function About({ theme }) {
         </Tilt>
 
         <div className='flex items-center justify-between pt-3'>
-          <a className='p-1.5 text-sm border-2 rounded-md border-accent text-lightText dark:text-darkText shadow-sm transition duration-300 ease-in-out hover:bg-accent hover:cursor-pointer hover:text-white'>
+          <a
+            href='/Maxwell Jones Resume.pdf'
+            download
+            className='p-1.5 text-sm border-2 rounded-md border-accent text-lightText dark:text-darkText shadow-sm transition duration-300 ease-in-out hover:bg-accent hover:cursor-pointer hover:text-white'
+          >
             Download Resume
           </a>
 
@@ -79,7 +83,7 @@ function About({ theme }) {
             </a>
           </div>
         </div>
-        <h2 className='pt-10 text-lightText dark:text-darkText'>
+        <h2 className='pt-10 text-lightText dark:text-darkText md:text-lg'>
           Languages, libraries & tools I use
         </h2>
 
@@ -97,8 +101,10 @@ function About({ theme }) {
       </div>
 
       <div className='pt-10 md:pt-0'>
-        <h2 className='text-2xl text-accent'>A little bit about me...</h2>
-        <p className='pt-5 font-light text-lightText dark:text-darkText'>
+        <h2 className='text-xl text-accent md:text-2xl lg:text-3xl'>
+          A little bit about me...
+        </h2>
+        <p className='pt-5 text-sm font-light text-lightText dark:text-darkText md:text-base xl:text-lg'>
           I'm a self-taught Frontend Developer based in Sydney, passionate about
           bringing conceptual designs to life through code.
           <br />
