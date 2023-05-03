@@ -36,7 +36,7 @@ function About({ theme }) {
           <a
             href='/Resume.pdf'
             download
-            className='p-1.5 text-sm border-2 rounded-md border-accent text-lightText dark:text-darkText shadow-sm transition duration-300 ease-in-out hover:bg-accent hover:cursor-pointer hover:text-white'
+            className='p-1.5 text-sm border-2 rounded-md dark:border-accent  text-lightText dark:text-darkText shadow-sm transition duration-300 ease-in-out hover:bg-accent hover:cursor-pointer hover:text-white'
           >
             Download Resume
           </a>
