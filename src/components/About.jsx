@@ -32,7 +32,7 @@ function About({ theme }) {
           />
         </Tilt>
 
-        <div className='flex items-center justify-between pt-3'>
+        <div className='flex items-center justify-between pt-5'>
           <a
             href='/Resume.pdf'
             download
