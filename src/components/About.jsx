@@ -18,7 +18,7 @@ function About({ theme }) {
 
   return (
     <div className='container-padding container-width md:flex md:gap-20 md:justify-between'>
-      <div className='max-w-[400px]'>
+      <div className='max-w-[450px]'>
         <Tilt
           tiltReverse={true}
           trackOnWindow={true}
@@ -34,7 +34,7 @@ function About({ theme }) {
 
         <div className='flex items-center justify-between pt-3'>
           <a
-            href='/Maxwell Jones Resume.pdf'
+            href='/Resume.pdf'
             download
             className='p-1.5 text-sm border-2 rounded-md border-accent text-lightText dark:text-darkText shadow-sm transition duration-300 ease-in-out hover:bg-accent hover:cursor-pointer hover:text-white'
           >
