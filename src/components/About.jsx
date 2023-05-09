@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Tilt from "react-parallax-tilt";
+import { checkMobileWidth } from "../utils/windowWidth";
 
 import Tile from "./Tile";
 
@@ -8,13 +9,13 @@ function About({ theme }) {
     window.innerWidth < 768 ? true : false
   );
 
-  function checkWindowWidth() {
-    if (window.innerWidth < 768) {
+  function setBio() {
+    if (checkMobileWidth() === true) {
       setShortBio(true);
     } else setShortBio(false);
   }
 
-  window.addEventListener("resize", checkWindowWidth);
+  window.addEventListener("resize", setBio);
 
   return (
     <div className='container-padding container-width md:flex md:gap-20 md:justify-between'>
