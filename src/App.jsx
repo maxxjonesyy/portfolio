@@ -4,6 +4,7 @@ import { setInitialTheme } from "./utils/theme";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
+import Projects from "./components/Projects";
 
 function App() {
   const [theme, setTheme] = useState(localStorage.theme || "dark");
@@ -23,6 +24,7 @@ function App() {
       </div>
       <Hero />
       <About theme={theme} />
+      <Projects />
     </div>
   );
 }
