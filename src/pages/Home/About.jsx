@@ -108,7 +108,7 @@ function About({ theme }) {
         <h2 className='text-xl text-accent md:text-2xl lg:text-3xl'>
           A little bit about me...
         </h2>
-        <p className='pt-5 text-sm font-light text-lightText dark:text-darkText md:text-base '>
+        <p className='pt-5 text-sm font-light text-lightText dark:text-darkText lg:text-base '>
           I'm a self-taught Frontend Developer based in Sydney, passionate about
           bringing conceptual designs to life through code.
           <br />
@@ -119,7 +119,7 @@ function About({ theme }) {
           the needs of clients and users.
         </p>
         {shortBio ? null : (
-          <p className='pt-5 font-light text-lightText dark:text-darkText'>
+          <p className='pt-5 text-sm font-light text-lightText dark:text-darkText lg:text-base'>
             Within my short duration in the industry, I've learned the
             importance of communication, collaboration, and attention to detail
             in delivering successful projects. I'm always eager to take on new

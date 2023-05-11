@@ -32,15 +32,15 @@ function Hero() {
         <h1 className='text-xl text-lightText dark:text-darkText md:text-3xl md:pt-1.5 xl:text-4xl'>
           I build cool things for the internet.
         </h1>
-        <p className='mt-5 text-sm font-light md:mt-10 text-lightText dark:text-darkText md:text-base md:w-2/3 lg:text-lg '>
+        <p className='mt-5 text-sm font-light md:mt-10 md:w-2/3 text-lightText dark:text-darkText lg:text-base'>
           I’m a self-taught Frontend Developer based in Sydney. Bringing
           conceptual ideas and designs to life.
         </p>
         <a
           href=''
-          className='w-40 p-1.5 mt-10 text-lg text-center transition duration-300 ease-in-out border-2 rounded-md text-lightText dark:text-darkText hover:text-white border-accent hover:bg-accent'
+          className='w-40 p-1.5 mt-10 text-center text-base lg:text-lg transition duration-300 ease-in-out border-2 rounded-md text-lightText dark:text-darkText hover:text-white border-accent hover:bg-accent'
         >
-          {`< Projects />`}
+          Projects
         </a>
       </div>
     </div>

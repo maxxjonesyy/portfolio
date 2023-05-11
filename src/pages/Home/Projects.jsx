@@ -54,7 +54,7 @@ function Projects() {
                         alt={project.alt}
                         className='object-contain'
                       />
-                      <div className='absolute flex items-center gap-2 p-1.5 rounded-r-md shadow-md top-1/2 bg-accent'>
+                      <div className='absolute flex items-center gap-2 p-2 shadow-md rounded-r-md top-1/2 bg-accent'>
                         <img
                           src='/icons/project.svg'
                           alt='project icon'
@@ -63,7 +63,7 @@ function Projects() {
                         <Link
                           to={`/project/`}
                           state={{ data: project }}
-                          className='text-sm text-white hover:cursor-pointer'
+                          className='text-sm text-white hover:cursor-pointer lg:text-base'
                         >
                           Project Info
                         </Link>
