@@ -5,8 +5,6 @@ import Tile from "../components/Tile";
 function ProjectPage() {
   const project = useLocation().state.data;
 
-  console.log(project);
-
   return (
     <div className='flex flex-col lg:flex-row lg:justify-between lg:gap-20 container-width container-padding'>
       <div className='mt-20 lg:w-1/2'>
@@ -41,21 +39,21 @@ function ProjectPage() {
           })}
         </div>
 
-        <img src={project.src} alt={project.alt} className='pt-10' />
+        <img src={project.src} alt={project.alt} className='pt-5' />
       </div>
 
       <div className='my-5 lg:my-20 lg:w-1/2'>
         <h2 className='text-xl font-semibold text-accent lg:text-2xl'>
           Summary
         </h2>
-        <p className='pt-3 text-sm text-lightText dark:text-darkText lg:text-base'>
+        <p className='pt-3 text-sm font-light text-lightText dark:text-darkText xl:text-base'>
           {project.description}
         </p>
 
         <h2 className='pt-5 text-xl font-semibold text-accent xl:text-2xl'>
           Challenges
         </h2>
-        <p className='pt-3 text-sm text-lightText dark:text-darkText xl:text-base'>
+        <p className='pt-3 text-sm font-light text-lightText dark:text-darkText xl:text-base'>
           {project.challenges}
         </p>
       </div>
