@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import Tilt from "react-parallax-tilt";
-import { checkMobileWidth } from "../utils/windowWidth";
+import { checkMobileWidth } from "../../utils/windowWidth";
 
-import Tile from "./Tile";
+import Tile from "../../components/Tile";
 
 function About({ theme }) {
   const [shortBio, setShortBio] = useState(
@@ -18,8 +18,11 @@ function About({ theme }) {
   window.addEventListener("resize", setBio);
 
   return (
-    <div className='container-padding container-width md:flex md:gap-20 md:justify-between'>
+    <div className='py-20 container-padding container-width md:flex md:gap-20 md:justify-between'>
       <div className='max-w-[450px]'>
+        <h2 className='pb-10 text-3xl font-bold underline drop-shadow-sm text-lightText dark:text-darkText lg:text-4xl'>
+          About.
+        </h2>
         <Tilt
           tiltReverse={true}
           trackOnWindow={true}
@@ -89,15 +92,15 @@ function About({ theme }) {
         </h2>
 
         <div className='flex flex-wrap gap-3 pt-5'>
-          <Tile skill={"HTML"} />
-          <Tile skill={"CSS"} />
-          <Tile skill={"Javascript"} />
-          <Tile skill={"React"} />
-          <Tile skill={"Sass"} />
-          <Tile skill={"Tailwind"} />
-          <Tile skill={"Git"} />
-          <Tile skill={"Firebase"} />
-          <Tile skill={"NodeJS"} />
+          <Tile skill={"HTML"} img={true} />
+          <Tile skill={"CSS"} img={true} />
+          <Tile skill={"Javascript"} img={true} />
+          <Tile skill={"React"} img={true} />
+          <Tile skill={"Sass"} img={true} />
+          <Tile skill={"Tailwind"} img={true} />
+          <Tile skill={"Git"} img={true} />
+          <Tile skill={"Firebase"} img={true} />
+          <Tile skill={"NodeJS"} img={true} />
         </div>
       </div>
 
@@ -105,7 +108,7 @@ function About({ theme }) {
         <h2 className='text-xl text-accent md:text-2xl lg:text-3xl'>
           A little bit about me...
         </h2>
-        <p className='pt-5 text-sm font-light text-lightText dark:text-darkText md:text-base xl:text-lg'>
+        <p className='pt-5 text-sm font-light text-lightText dark:text-darkText md:text-base '>
           I'm a self-taught Frontend Developer based in Sydney, passionate about
           bringing conceptual designs to life through code.
           <br />

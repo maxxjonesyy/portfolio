@@ -1,6 +1,5 @@
 import React from "react";
 import { Player } from "@lottiefiles/react-lottie-player";
-import heroAnimation from "../assets/hero-animation.json";
 
 function Hero() {
   return (
@@ -13,7 +12,7 @@ function Hero() {
         className='w-3/4 max-w-[500px] md:w-1/2 md:order-2 2xl:max-w-[550px]'
       >
         <Player
-          src={heroAnimation}
+          src='../hero-animation.json'
           loop
           autoplay
           style={{
