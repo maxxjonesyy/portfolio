@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import { setInitialTheme } from "./utils/theme";
 import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import About from "./components/About";
-import Projects from "./components/Projects";
+import Home from "./pages/Home/Home";
+import ProjectPage from "./pages/ProjectPage";
 
 function App() {
   const [theme, setTheme] = useState(localStorage.theme || "dark");
@@ -19,12 +19,14 @@ function App() {
 
   return (
     <div className='max-h-screen max-w-screen bg-lightBg dark:bg-darkBg'>
-      <div className='fixed top-0 z-10 w-full'>
-        <Navbar handleThemeSwitch={handleThemeSwitch} theme={theme} />
-      </div>
-      <Hero />
-      <About theme={theme} />
-      <Projects />
+      <Navbar handleThemeSwitch={handleThemeSwitch} theme={theme} />
+
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Home theme={theme} />} />
+          <Route path='/project/' element={<ProjectPage />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
