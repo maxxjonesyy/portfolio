@@ -6,7 +6,7 @@ function ProjectPage() {
   const project = useLocation().state.data;
 
   return (
-    <div className='flex flex-col lg:flex-row lg:justify-between lg:gap-20 container-width container-padding'>
+    <div className='flex flex-col mb-10 lg:flex-row lg:justify-between lg:gap-20 container-width container-padding'>
       <div className='mt-20 lg:w-1/2'>
         <h1 className='text-3xl font-semibold text-accent xl:text-4xl'>
           {project.heading}
