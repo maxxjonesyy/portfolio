@@ -4,8 +4,6 @@ import { DarkModeSwitch } from "react-toggle-dark-mode";
 function Navbar({ handleThemeSwitch, theme }) {
   const [scrollDirection, setScrollDirection] = useState(null);
 
-  console.log(scrollDirection);
-
   useEffect(() => {
     let lastScrollY = scrollY;
 
