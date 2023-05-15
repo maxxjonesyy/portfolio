@@ -33,20 +33,20 @@ function Navbar({ handleThemeSwitch, theme }) {
       }`}
     >
       <div className='flex items-center justify-between w-full navbar-padding container-width'>
-        <a href='#hero'>
+        <a href='/#hero'>
           <h1 className='text-3xl font-semibold text-accent lg:text-5xl'>
             MJ.
           </h1>
         </a>
         <ul className='flex items-center'>
           <li className='transition-all duration-300 ease-in-out text-lightText dark:text-darkText hover:text-accent dark:hover:text-accent'>
-            <a href='#about'>About</a>
+            <a href='/#about'>About</a>
           </li>
           <li className='ml-3 transition-all duration-300 ease-in-out text-lightText dark:text-darkText hover:text-accent dark:hover:text-accent'>
-            <a href='#projects'>Projects</a>
+            <a href='/#projects'>Projects</a>
           </li>
           <li className='ml-3 transition-all duration-300 ease-in-out text-lightText dark:text-darkText hover:text-accent dark:hover:text-accent'>
-            <a href='#contact'>Contact</a>
+            <a href='/#contact'>Contact</a>
           </li>
           <li className='ml-5 md:ml-10'>
             <DarkModeSwitch
