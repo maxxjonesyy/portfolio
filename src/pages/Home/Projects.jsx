@@ -18,7 +18,7 @@ function Projects() {
   window.addEventListener("resize", setSlidesPerView);
 
   return (
-    <div className='py-20 container-padding container-width'>
+    <div id='projects' className='py-20 container-padding container-width'>
       <h2 className='pb-10 text-3xl font-bold underline drop-shadow-sm text-lightText dark:text-darkText lg:text-4xl'>
         Projects.
       </h2>
@@ -45,7 +45,7 @@ function Projects() {
                     </p>
                     <div
                       className={`relative transition-all ease-in-out ${
-                        isActive ? "" : "blur-[1.25px]"
+                        isActive ? "" : "blur-[0.85px]"
                       }`}
                     >
                       <div className='w-full'></div>
