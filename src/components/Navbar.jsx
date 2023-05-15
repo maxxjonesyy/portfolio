@@ -11,7 +11,7 @@ function Navbar({ handleThemeSwitch, theme }) {
       const direction = scrollY > lastScrollY ? "down" : "up";
       if (
         direction !== scrollDirection &&
-        (scrollY - lastScrollY > 10 || scrollY - lastScrollY < -10)
+        (scrollY - lastScrollY > 5 || scrollY - lastScrollY < 5)
       ) {
         setScrollDirection(direction);
       }
