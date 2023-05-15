@@ -18,7 +18,7 @@ function App() {
   }
 
   return (
-    <div className='max-h-screen max-w-screen bg-lightBg dark:bg-darkBg'>
+    <div className='bg-lightBg dark:bg-darkBg'>
       <Navbar handleThemeSwitch={handleThemeSwitch} theme={theme} />
 
       <BrowserRouter>
