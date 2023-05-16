@@ -9,13 +9,13 @@
   scroll-behavior: smooth;
 }
 
-@layer components {
-  .navbar-padding {
-    @apply px-8 pt-8;
-  }
+::-webkit-scrollbar {
+  width: 0px;
+}
 
+@layer components {
   .container-padding {
-    @apply px-8;
+    @apply p-8;
   }
 
   .container-width {
