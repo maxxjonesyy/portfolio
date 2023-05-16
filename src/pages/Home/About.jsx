@@ -20,7 +20,7 @@ function About({ theme }) {
   return (
     <div
       id='about'
-      className='py-20 container-padding container-width md:flex md:gap-20 md:justify-between'
+      className='flex flex-col justify-center h-screen container-padding container-width md:flex md:gap-20 md:justify-between md:items-center md:flex-row'
     >
       <div className='max-w-[450px]'>
         <h2 className='pb-10 text-3xl font-bold underline drop-shadow-sm text-lightText dark:text-darkText lg:text-4xl'>

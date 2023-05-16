@@ -23,6 +23,6 @@ body {
   }
 
   .container-width {
-    @apply mx-auto max-w-[75rem];
+    @apply mx-auto max-w-[80rem];
   }
 }

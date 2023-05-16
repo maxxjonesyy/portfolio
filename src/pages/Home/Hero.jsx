@@ -37,7 +37,7 @@ function Hero() {
           conceptual ideas and designs to life.
         </p>
         <a
-          href=''
+          href='#projects'
           className='w-40 p-1.5 mt-10 text-center text-base lg:text-lg transition duration-300 ease-in-out border-2 rounded-md text-lightText dark:text-darkText hover:text-white border-accent hover:bg-accent'
         >
           Projects
