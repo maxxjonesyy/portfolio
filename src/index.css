@@ -9,10 +9,6 @@
   scroll-behavior: smooth;
 }
 
-body {
-  overflow-x: hidden;
-}
-
 @layer components {
   .navbar-padding {
     @apply px-8 pt-8;
