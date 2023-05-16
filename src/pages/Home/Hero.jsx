@@ -9,7 +9,7 @@ function Hero() {
     >
       <div
         id='hero-animation'
-        className='w-3/4 max-w-[500px] md:w-1/2 md:order-2 2xl:max-w-[550px]'
+        className='w-3/4 max-w-[500px] md:w-1/2 md:order-2 2xl:max-w-[550px] '
       >
         <Player
           src='../hero-animation.json'
