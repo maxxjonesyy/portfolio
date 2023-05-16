@@ -20,7 +20,7 @@ function Projects() {
   return (
     <div
       id='projects'
-      className='flex flex-col justify-center h-screen container-padding container-width'
+      className='flex flex-col justify-center min-h-screen container-padding container-width'
     >
       <div className=''>
         <h2 className='pb-10 text-3xl font-bold underline drop-shadow-sm text-lightText dark:text-darkText lg:text-4xl'>
