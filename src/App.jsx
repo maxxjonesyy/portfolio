@@ -5,6 +5,7 @@ import { setInitialTheme } from "./utils/theme";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home/Home";
 import ProjectPage from "./pages/ProjectPage";
+import Footer from "./components/Footer";
 import SplashAnimation from "./components/SplashAnimation";
 
 function App() {
@@ -35,6 +36,7 @@ function App() {
           <Route path='/project/' element={<ProjectPage />} />
         </Routes>
       </BrowserRouter>
+      <Footer />
     </div>
   );
 }
