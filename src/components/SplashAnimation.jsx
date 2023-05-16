@@ -1,6 +1,6 @@
 import React from "react";
 
-function Loader() {
+function SplashAnimation() {
   return (
     <div className='absolute flex flex-col gap-10 items-center justify-center h-screen w-screen bg-white z-[999] animate-fade-out'>
       <div className='animate-bounce'>
@@ -11,4 +11,4 @@ function Loader() {
   );
 }
 
-export default Loader;
+export default SplashAnimation;

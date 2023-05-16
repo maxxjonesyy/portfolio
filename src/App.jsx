@@ -5,26 +5,26 @@ import { setInitialTheme } from "./utils/theme";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home/Home";
 import ProjectPage from "./pages/ProjectPage";
-import Loader from "./components/Loader";
+import SplashAnimation from "./components/SplashAnimation";
 
 function App() {
   const [theme, setTheme] = useState(localStorage.theme || "dark");
-  const [loading, setLoading] = useState(true);
+  const [splash, setSplash] = useState(true);
 
   useEffect(() => {
     setInitialTheme(theme);
   }, [theme]);
 
   setTimeout(() => {
-    setLoading(false);
+    setSplash(false);
   }, 2000);
 
   function handleThemeSwitch() {
     setTheme(theme === "dark" ? "light" : "dark");
   }
 
-  return loading ? (
-    <Loader />
+  return splash ? (
+    <SplashAnimation />
   ) : (
     <div className='bg-lightBg dark:bg-darkBg animate-fade-in'>
       <Navbar handleThemeSwitch={handleThemeSwitch} theme={theme} />
