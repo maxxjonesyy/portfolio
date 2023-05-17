@@ -5,11 +5,11 @@ function Hero() {
   return (
     <div
       id='hero'
-      className='flex flex-col items-center justify-center min-h-screen bg-lightBg dark:bg-darkBg container-padding container-width md:flex-row md:justify-between'
+      className='flex flex-col items-center justify-center min-h-screen bg-transparent container-padding container-width md:flex-row md:justify-between'
     >
       <div
         id='hero-animation'
-        className='w-3/4 max-w-[500px] md:w-1/2 md:order-2 2xl:max-w-[550px] '
+        className='w-3/4 max-w-[500px] md:w-1/2 md:order-2 2xl:max-w-[550px]'
       >
         <Player
           src='../hero-animation.json'
@@ -38,7 +38,7 @@ function Hero() {
         </p>
         <a
           href='#projects'
-          className='w-40 p-1.5 mt-10 text-center text-base lg:text-lg transition duration-300 ease-in-out border-2 rounded-md text-lightText dark:text-darkText hover:text-white border-accent hover:bg-accent'
+          className='w-40 p-1.5 mt-10 text-center text-base lg:text-lg transition duration-300 ease-in-out rounded-md text-white bg-accent shadow-md '
         >
           Projects
         </a>
