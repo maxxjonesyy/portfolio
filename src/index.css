@@ -14,8 +14,12 @@
 }
 
 @layer components {
-  .container-padding {
+  .navbar-padding {
     @apply p-8;
+  }
+
+  .container-padding {
+    @apply px-8;
   }
 
   .container-width {
