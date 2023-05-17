@@ -19,6 +19,6 @@
   }
 
   .container-width {
-    @apply mx-auto max-w-[80rem];
+    @apply mx-auto max-w-[80rem] 2xl:max-w-[90rem];
   }
 }
