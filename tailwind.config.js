@@ -6,13 +6,17 @@ export default {
     extend: {
       colors: {
         darkText: "#EFECEC",
-        darkBg: "#262626",
         lightText: "#545454",
-        lightBg: "#f5f5f5",
         accent: "#8A61FF",
         darkTile: "#2b2b2b",
         lightTile: "#ebebeb",
       },
+      backgroundImage: {
+        lightBg:
+          "linear-gradient(to top, rgb(240, 240, 240), rgb(255, 255, 255))",
+        darkBg: "linear-gradient(to top, rgb(36, 36, 36), rgb(36, 36, 45))",
+      },
+
       animation: {
         "fade-in": "fade-in 1s ease-in-out",
         "fade-out": "fade-out 2s ease-in-out",
