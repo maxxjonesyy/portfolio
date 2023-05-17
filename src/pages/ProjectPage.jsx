@@ -6,7 +6,7 @@ function ProjectPage() {
   const project = useLocation().state.data;
 
   return (
-    <div className='flex items-center justify-center min-h-screen pt-10 md:pt-0'>
+    <div className='flex items-center justify-center min-h-screen'>
       <div className='flex flex-col lg:flex-row lg:justify-between lg:gap-20 container-width container-padding'>
         <div className='lg:w-1/2'>
           <h1 className='text-3xl font-semibold text-accent xl:text-4xl'>
