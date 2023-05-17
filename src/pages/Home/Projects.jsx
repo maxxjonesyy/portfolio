@@ -22,7 +22,7 @@ function Projects() {
       id='projects'
       className='flex flex-col justify-center min-h-screen container-padding container-width'
     >
-      <div className=''>
+      <div>
         <h2 className='pb-10 text-3xl font-bold underline drop-shadow-sm text-lightText dark:text-darkText lg:text-4xl'>
           Projects.
         </h2>
