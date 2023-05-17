@@ -23,7 +23,7 @@ function Hero() {
       </div>
 
       <div className='flex flex-col justify-center mt-10'>
-        <h1 className='text-xl text-lightText dark:text-darkText md:text-3xl xl:text-4xl'>
+        <h1 className='text-xl text-lightText dark:text-darkText md:text-3xl 2xl:text-4xl'>
           Hello my name is
         </h1>
         <h1 className='text-4xl font-semibold text-accent md:text-4xl md:pt-1.5 xl:text-5xl'>
@@ -32,7 +32,7 @@ function Hero() {
         <h1 className='text-xl text-lightText dark:text-darkText md:text-3xl md:pt-1.5 xl:text-4xl'>
           I build cool things for the internet.
         </h1>
-        <p className='mt-5 text-sm font-light md:mt-10 md:w-2/3 text-lightText dark:text-darkText lg:text-base'>
+        <p className='mt-5 text-sm font-light lg:text-base xl:text-lg md:mt-10 md:w-2/3 text-lightText dark:text-darkText'>
           I’m a self-taught Frontend Developer based in Sydney. Bringing
           conceptual ideas and designs to life.
         </p>

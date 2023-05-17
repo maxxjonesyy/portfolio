@@ -21,7 +21,7 @@ function About({ theme }) {
   return (
     <div
       id='about'
-      className='flex flex-col justify-center min-h-screen container-padding container-width md:flex md:gap-20 md:justify-between md:items-center md:flex-row'
+      className='flex flex-col justify-center min-h-screen container-padding container-width md:flex md:gap-20 md:justify-between md:flex-row'
     >
       <div className='max-w-[450px]'>
         <h2 className='pb-10 text-3xl font-bold underline drop-shadow-sm text-lightText dark:text-darkText lg:text-4xl'>
@@ -44,7 +44,7 @@ function About({ theme }) {
           <a
             href='/Resume.pdf'
             download
-            className='p-1.5 text-sm border-2 rounded-md dark:border-accent  text-lightText dark:text-darkText shadow-sm transition duration-300 ease-in-out hover:bg-accent hover:cursor-pointer hover:text-white'
+            className='p-2 text-sm text-white rounded-md shadow-md bg-accent hover:cursor-pointer'
           >
             Download Resume
           </a>
@@ -68,7 +68,7 @@ function About({ theme }) {
         </div>
       </div>
 
-      <div className='pt-10 md:pt-0'>
+      <div className='pt-16'>
         <h2 className='text-xl text-accent md:text-2xl lg:text-3xl'>
           A little bit about me...
         </h2>
