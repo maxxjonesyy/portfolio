@@ -23,9 +23,15 @@ function Projects() {
       className='flex flex-col justify-center min-h-screen container-padding container-width'
     >
       <div>
-        <h2 className='pb-10 text-3xl font-bold underline drop-shadow-sm text-lightText dark:text-darkText lg:text-4xl'>
+        <h2 className='pb-3 text-3xl font-bold underline md:pb-10 drop-shadow-sm text-lightText dark:text-darkText lg:text-4xl'>
           Projects.
         </h2>
+
+        {checkMobileWidth() === true ? (
+          <p className='pb-10 font-light text-lightText dark:text-darkText'>
+            Swipe to view my work.
+          </p>
+        ) : null}
 
         <Swiper
           slidesPerView={swiperSlides}
