@@ -35,7 +35,7 @@ function Contact({ theme }) {
   return (
     <div
       id='contact'
-      className='flex flex-col items-center justify-center min-h-screen container-padding container-width'
+      className='flex flex-col items-center justify-center min-h-screen container-padding container-width max-w-[45rem]'
     >
       <h1 className='pb-3 text-3xl font-bold underline drop-shadow-sm text-lightText dark:text-darkText lg:text-4xl'>
         Contact.
@@ -71,32 +71,32 @@ function Contact({ theme }) {
           name='user_name'
           placeholder='Name'
           required
-          className='w-full p-2 transition-all bg-transparent border-b-2 outline-none md:w-2/3 placeholder-lightText dark:placeholder-darkText border-gray dark:text-darkText text-lightText'
+          className='w-full p-2 transition-all bg-transparent border-b-2 outline-none placeholder-lightText dark:placeholder-darkText border-gray dark:text-darkText text-lightText'
         />
         <input
           type='email'
           name='user_email'
           placeholder='Email'
           required
-          className='w-full p-2 transition-all bg-transparent border-b-2 outline-none md:w-2/3 placeholder-lightText dark:placeholder-darkText border-gray dark:text-darkText text-lightText'
+          className='w-full p-2 transition-all bg-transparent border-b-2 outline-none placeholder-lightText dark:placeholder-darkText border-gray dark:text-darkText text-lightText'
         />
         <textarea
           name='message'
           placeholder='Message'
           required
-          className='w-full p-2 transition-all bg-transparent border-b-2 outline-none md:w-2/3 placeholder-lightText dark:placeholder-darkText border-gray dark:text-darkText text-lightText'
+          className='w-full p-2 transition-all bg-transparent border-b-2 outline-none placeholder-lightText dark:placeholder-darkText border-gray dark:text-darkText text-lightText'
         />
         <button
           id='send-button'
           type='submit'
-          className='w-full p-2 text-sm text-white transition-all duration-300 ease-in-out rounded-md shadow-md md:w-2/3 hover:cursor-pointer bg-accent'
+          className='w-full p-2 text-sm text-white transition-all duration-300 ease-in-out rounded-md shadow-md hover:cursor-pointer bg-accent'
         >
           Send
         </button>
 
         <div
           id='alert'
-          className='relative flex-col hidden w-full p-2 bg-white rounded-md shadow sm:flex-row sm:items-center md:w-2/3 sm:pr-6'
+          className='relative flex-col hidden w-full p-2 bg-white rounded-md shadow sm:flex-row sm:items-center sm:pr-6'
         >
           <div className='flex flex-row items-center justify-center w-full'>
             <div className='text-green-500'>
