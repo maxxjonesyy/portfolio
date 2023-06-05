@@ -1,11 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
 import Tile from "../components/Tile";
+import SplashAnimation from "../components/SplashAnimation";
 
 function ProjectPage() {
+  const [splash, setSplash] = useState(true);
   const project = useLocation().state.data;
 
-  return (
+  setTimeout(() => {
+    setSplash(false);
+  }, 1500);
+
+  return splash ? (
+    <SplashAnimation />
+  ) : (
     <div className='flex items-center justify-center min-h-screen'>
       <div className='flex flex-col lg:flex-row lg:justify-between lg:gap-20 container-width container-padding'>
         <div className='lg:w-1/2'>
