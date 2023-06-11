@@ -5,7 +5,7 @@ function Hero() {
   return (
     <div
       id='hero'
-      className='flex flex-col items-center justify-center min-h-screen bg-transparent container-padding container-width md:flex-row md:justify-between'
+      className='flex flex-col items-center justify-center bg-transparent container-padding md:my-[20rem] container-width md:flex-row md:justify-between'
     >
       <div
         id='hero-animation'
@@ -22,7 +22,7 @@ function Hero() {
         />
       </div>
 
-      <div className='flex flex-col justify-center mt-10'>
+      <div className='flex flex-col justify-center mt-5 md:mt-0'>
         <h1 className='text-xl text-lightText dark:text-darkText md:text-3xl 2xl:text-4xl'>
           Hello my name is
         </h1>

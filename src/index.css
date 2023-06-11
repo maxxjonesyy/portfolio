@@ -19,10 +19,14 @@
   }
 
   .container-padding {
-    @apply px-8;
+    @apply px-10;
+  }
+
+  .container-margin {
+    @apply my-[25rem];
   }
 
   .container-width {
-    @apply mx-auto max-w-[80rem] 2xl:max-w-[90rem];
+    @apply mx-auto transition-all max-w-[65rem] 2xl:max-w-[90rem];
   }
 }

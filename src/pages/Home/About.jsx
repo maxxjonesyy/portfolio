@@ -21,7 +21,7 @@ function About({ theme }) {
   return (
     <div
       id='about'
-      className='flex flex-col justify-center min-h-screen mt-20 md:mt-0 md:gap-20 container-padding container-width md:flex-row md:items-center'
+      className='flex flex-col justify-center md:gap-20 container-padding container-margin container-width md:flex-row md:items-center'
     >
       <div className='max-w-[450px]'>
         <h2 className='pb-10 text-3xl font-bold underline drop-shadow-sm text-lightText dark:text-darkText lg:text-4xl'>
