@@ -5,7 +5,7 @@ function Hero() {
   return (
     <div
       id='hero'
-      className='flex flex-col items-center justify-center bg-transparent container-padding md:my-[20rem] container-width md:flex-row md:justify-between'
+      className='flex flex-col items-center justify-center mt-[5rem] bg-transparent md:mt-0 md:h-screen container-padding container-width md:flex-row md:justify-between'
     >
       <div
         id='hero-animation'
