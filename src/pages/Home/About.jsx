@@ -42,7 +42,7 @@ function About({ theme }) {
 
         <div className='flex items-center justify-between pt-5'>
           <a
-            href='/Resume.pdf'
+            href='Developer Resume.pdf'
             download
             className='p-2 text-sm text-white rounded-md shadow-md bg-accent hover:cursor-pointer'
           >
