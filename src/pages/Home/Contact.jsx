@@ -35,7 +35,7 @@ function Contact({ theme }) {
   return (
     <div
       id='contact'
-      className='flex flex-col items-center justify-center container-padding container-margin container-width max-w-[45rem]'
+      className='flex flex-col items-center justify-center container-padding container-width max-w-[45rem]'
     >
       <h1 className='pb-3 text-3xl font-bold underline drop-shadow-sm text-lightText dark:text-darkText lg:text-4xl'>
         Contact.
