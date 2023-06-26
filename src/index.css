@@ -23,7 +23,7 @@
   }
 
   .container-margin {
-    @apply my-[25rem];
+    @apply py-[12rem] md:py-[22rem];
   }
 
   .container-width {

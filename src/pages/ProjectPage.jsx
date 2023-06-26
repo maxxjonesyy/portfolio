@@ -14,7 +14,7 @@ function ProjectPage() {
   return splash ? (
     <SplashAnimation />
   ) : (
-    <div className='flex flex-col items-center h-screen mt-10 lg:mt-0 lg:flex-row lg:justify-between lg:gap-20 container-width container-padding'>
+    <div className='flex flex-col items-center h-screen pt-10 lg:pt-0 lg:flex-row lg:justify-between lg:gap-20 container-width container-padding'>
       <div className='lg:w-1/2'>
         <h1 className='text-3xl font-semibold text-accent xl:text-4xl'>
           {project.heading}
