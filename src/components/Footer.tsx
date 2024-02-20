@@ -8,7 +8,7 @@ function Footer() {
 
   return (
     <footer className='w-full absolute inline-flex items-center justify-between bottom-0 p-5 dark:text-darkText'>
-      <p className='text-sm md:text-base transition-all'>Maxwell Jones</p>
+      <p className='text-body'>Maxwell Jones</p>
       <ul className='inline-flex gap-3'>
         <li className='w-[1.35rem] md:w-[1.75rem] transition-all'>
           <a href='https://github.com/maxxjonesyy' target='_blank'>

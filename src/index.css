@@ -7,6 +7,10 @@
         font-family: 'JetBrains Mono', monospace;
         box-sizing: border-box;
     }
+
+    .text-body {
+        @apply text-sm md:text-base transition-all;
+    }
 }
 
 @layer components {

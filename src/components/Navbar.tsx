@@ -11,7 +11,7 @@ function Navbar({ theme, setTheme }: NavProps) {
 
   return (
     <nav className='flex justify-center items-center p-5'>
-      <ul className='inline-flex gap-5 text-sm md:text-base transition-all dark:text-darkText'>
+      <ul className='inline-flex gap-5 text-body dark:text-darkText'>
         <li>
           <Link to='/about'>About</Link>
         </li>
