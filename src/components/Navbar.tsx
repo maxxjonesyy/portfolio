@@ -9,10 +9,12 @@ function Navbar() {
   const [theme, setTheme] = useState(localStorage.theme || "dark");
 
   useEffect(() => {
+    document.body.className = theme;
+
     if (!localStorage.theme) {
       localStorage.setItem("theme", theme);
     }
-  }, []);
+  }, [theme]);
 
   function handleThemeSwitch() {
     const switchedTheme = theme === "dark" ? "light" : "dark";
@@ -37,9 +39,7 @@ function Navbar() {
 
       <ul className='inline-flex gap-5'>
         <li>
-          <Link to='/about' className='dark:text-orange-400'>
-            About
-          </Link>
+          <Link to='/about'>About</Link>
         </li>
         <li>
           <Link to='/projects'>Projects</Link>
