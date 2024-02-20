@@ -1,21 +1,8 @@
-import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { DarkModeSwitch } from "react-toggle-dark-mode";
+import { NavProps } from "../types/types";
 
-import Github from "../assets/icons/github.svg";
-import LinkedIn from "../assets/icons/linkedin.svg";
-
-function Navbar() {
-  const [theme, setTheme] = useState(localStorage.theme || "dark");
-
-  useEffect(() => {
-    document.body.className = theme;
-
-    if (!localStorage.theme) {
-      localStorage.setItem("theme", theme);
-    }
-  }, [theme]);
-
+function Navbar({ theme, setTheme }: NavProps) {
   function handleThemeSwitch() {
     const switchedTheme = theme === "dark" ? "light" : "dark";
     setTheme(switchedTheme);
@@ -23,21 +10,8 @@ function Navbar() {
   }
 
   return (
-    <nav className='flex justify-between items-center p-3'>
-      <ul className='inline-flex items-center gap-3'>
-        <li className='w-6'>
-          <a href='https://github.com/maxxjonesyy' target='_blank'>
-            <img src={Github} alt='Github link' />
-          </a>
-        </li>
-        <li className='w-8'>
-          <a href='https://www.linkedin.com/in/maxxjonesyy/' target='_blank'>
-            <img src={LinkedIn} alt='LinkedIn link' />
-          </a>
-        </li>
-      </ul>
-
-      <ul className='inline-flex gap-5'>
+    <nav className='flex justify-center items-center p-5'>
+      <ul className='inline-flex gap-5 dark:text-darkText'>
         <li>
           <Link to='/about'>About</Link>
         </li>
@@ -47,14 +21,15 @@ function Navbar() {
         <li>
           <Link to='/contact'>Contact</Link>
         </li>
+        <li>
+          <DarkModeSwitch
+            moonColor='#e5e7eb'
+            sunColor='#000000'
+            checked={theme === "dark" ? true : false}
+            onChange={handleThemeSwitch}
+          />
+        </li>
       </ul>
-
-      <DarkModeSwitch
-        moonColor='#000000'
-        sunColor='#000000'
-        checked={theme === "dark" ? true : false}
-        onChange={handleThemeSwitch}
-      />
     </nav>
   );
 }

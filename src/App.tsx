@@ -1,5 +1,8 @@
 import { useState, useEffect } from "react";
+import { Routes as Router, Route } from "react-router-dom";
 
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import { Home, About, Projects, Contact } from "./views/index";
 
 function App() {
@@ -12,14 +15,17 @@ function App() {
       localStorage.setItem("theme", theme);
     }
   }, [theme]);
+
   return (
-    <div>
-      <Routes>
+    <div className='min-h-screen bg-gray-200 dark:bg-gray-800'>
+      <Navbar theme={theme} setTheme={setTheme} />
+      <Router>
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
         <Route path='/projects' element={<Projects />} />
         <Route path='/contact' element={<Contact />} />
-      </Routes>
+      </Router>
+      <Footer />
     </div>
   );
 }
