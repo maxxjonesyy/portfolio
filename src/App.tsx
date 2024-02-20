@@ -1,8 +1,17 @@
-import { Routes, Route } from "react-router-dom";
+import { useState, useEffect } from "react";
 
 import { Home, About, Projects, Contact } from "./views/index";
 
 function App() {
+  const [theme, setTheme] = useState(localStorage.theme || "dark");
+
+  useEffect(() => {
+    document.body.className = theme;
+
+    if (!localStorage.theme) {
+      localStorage.setItem("theme", theme);
+    }
+  }, [theme]);
   return (
     <div>
       <Routes>
