@@ -9,7 +9,7 @@
     }
 
     .text-body {
-        @apply text-sm md:text-base transition-all;
+        @apply text-sm md:text-base transition-theme;
     }
 }
 
@@ -18,5 +18,7 @@
 }
 
 @layer utilities {
-
+    .transition-theme {
+        @apply transition-all duration-300
+    }
 }
