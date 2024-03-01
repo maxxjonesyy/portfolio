@@ -2,9 +2,7 @@ import { useState, useEffect } from "react";
 import { Routes as Router, Route } from "react-router-dom";
 
 import { Home, About, Projects, Contact } from "./views/index";
-
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
+import { Navbar, Footer } from "./components/index";
 
 function App() {
   const [theme, setTheme] = useState(localStorage.theme || "dark");
