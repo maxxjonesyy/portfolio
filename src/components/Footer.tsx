@@ -2,9 +2,10 @@ import Github from "../assets/icons/github.svg";
 import GithubDark from "../assets/icons/github-dark.svg";
 import LinkedIn from "../assets/icons/linkedin.svg";
 import LinkedInDark from "../assets/icons/linkedin-dark.svg";
+import isDarkTheme from "../utils/isDarkTheme";
 
 function Footer() {
-  const isDark = localStorage.theme === "dark" ? true : false;
+  const isDark = isDarkTheme();
 
   return (
     <footer className='w-full absolute inline-flex items-center justify-between bottom-0 p-5 dark:text-darkText'>
