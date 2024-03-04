@@ -4,8 +4,10 @@ export default {
   darkMode: "class",
   theme: {
     extend: {
-      textColor: {
+      colors: {
         darkText: "#e5e7eb",
+        darkBg: "#00171F",
+        lightBg: "#FBFBFF"
       },
     },
   },
