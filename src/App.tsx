@@ -16,7 +16,7 @@ function App() {
   }, [theme]);
 
   return (
-    <div className='min-h-screen bg-gray-200 dark:bg-gray-800'>
+    <div className='min-h-screen'>
       <Navbar theme={theme} setTheme={setTheme} />
       <Router>
         <Route path='/' element={<Home />} />
