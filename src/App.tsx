@@ -19,7 +19,7 @@ function App() {
   }, [theme]);
 
   return (
-    <div className='min-h-screen'>
+    <div className='min-h-screen flex flex-col'>
       <Navbar theme={theme} setTheme={setTheme} />
       <Router>
         <Route path='/' element={<Home />} />
