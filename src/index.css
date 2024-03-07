@@ -134,15 +134,30 @@
   }
 
   body {
-    @apply font-mono box-border;
+    @apply font-rubik box-border;
+  }
+
+  .text-heading {
+    @apply text-accentText font-bold text-4xl md:text-5xl lg:text-6xl transition-theme;
+  }
+
+  .text-subheading {
+    @apply text-3xl md:text-4xl transition-theme my-2;
   }
 
   .text-body {
-    @apply text-sm md:text-base transition-theme;
+    @apply text-base md:text-lg transition-theme;
+  }
+
+  .text-button {
+    @apply text-lg md:text-xl transition-theme
   }
 }
 
 @layer components {
+  .container-padding {
+    @apply mx-5;
+  }
 }
 
 @layer utilities {
