@@ -10,7 +10,7 @@ function Navbar({ theme, setTheme }: NavProps) {
   }
 
   return (
-    <nav className='flex justify-center items-center p-5'>
+    <nav className='flex justify-center items-center p-5 z-[1]'>
       <ul className='inline-flex items-center gap-5 text-body dark:text-darkText'>
         <li>
           <Link to='/'>Home</Link>

@@ -2,7 +2,7 @@ import { LinkButton } from "../components";
 
 function Home() {
   return (
-    <div className='flex flex-grow items-center justify-center dark:text-darkText'>
+    <div className='relative -top-10 flex flex-grow items-center justify-center dark:text-darkText'>
       <div className='container-padding'>
         <h2 className='text-subheading'>Hello my name is</h2>
         <h1 className='text-heading'>Maxwell Jones</h1>
