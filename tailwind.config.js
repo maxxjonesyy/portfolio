@@ -8,9 +8,10 @@ export default {
         rubik: ["Rubik", "sans-serif"],
       },
       colors: {
+        accentText: "#4361ee",
         darkText: "#e5e7eb",
         darkBg: "#00171F",
-        lightBg: "#FBFBFF"
+        lightBg: "#FBFBFF",
       },
     },
   },
