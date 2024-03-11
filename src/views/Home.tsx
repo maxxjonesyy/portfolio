@@ -4,11 +4,11 @@ function Home() {
   return (
     <div className='relative -top-10 flex flex-grow items-center justify-center dark:text-darkText'>
       <div className='container-padding'>
-        <h2 className='text-subheading'>Hello my name is</h2>
+        <h1 className='text-subheading'>Hello my name is</h1>
         <h1 className='text-heading'>Maxwell Jones</h1>
-        <h3 className='text-subheading'>
+        <h1 className='text-subheading'>
           I build cool things for the internet.
-        </h3>
+        </h1>
 
         <p className='text-body mt-5 w-3/4'>
           Passionate Frontend Developer based in Sydney. Bringing conceptual web
