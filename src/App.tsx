@@ -7,7 +7,7 @@ import { Navbar, Footer } from "./components/index";
 import setOverScroll from "./utils/setOverscroll";
 
 function App() {
-  const [theme, setTheme] = useState(localStorage.theme || "dark");
+  const [theme, setTheme] = useState(localStorage.theme || "light");
 
   useEffect(() => {
     setOverScroll();
