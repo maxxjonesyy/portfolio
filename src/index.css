@@ -143,6 +143,28 @@
     @apply transition-all duration-300;
   }
 
+  .slide-in {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #0f0f0f;
+    transform-origin: bottom;
+    z-index: 999;
+  }
+
+  .slide-out {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #0f0f0f;
+    transform-origin: top;
+    z-index: 999;
+  }
+
   @keyframes moveInCircle {
     0% {
       transform: rotate(0deg);
