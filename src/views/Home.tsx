@@ -1,4 +1,5 @@
 import { LinkButton } from "../components";
+import transition from "../utils/transition";
 
 function Home() {
   return (
@@ -23,4 +24,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default transition(Home);

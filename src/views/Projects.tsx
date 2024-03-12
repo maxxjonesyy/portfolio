@@ -1,5 +1,7 @@
+import transition from "../utils/transition";
+
 function Projects() {
   return <div>Projects</div>;
 }
 
-export default Projects;
+export default transition(Projects);
