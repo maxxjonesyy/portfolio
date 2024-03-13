@@ -4,7 +4,9 @@ export type NavProps = {
 };
 
 export type LinkButton = {
-  internalRoute: string;
-  externalRoute?: string;
+  download?: boolean;
+  route: string;
+  external: boolean;
   text: string;
+  textSize?: string;
 };

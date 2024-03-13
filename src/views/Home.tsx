@@ -17,7 +17,7 @@ function Home() {
         </p>
 
         <div className='mt-5'>
-          <LinkButton internalRoute='projects' text='View my work.' />
+          <LinkButton route='projects' external={false} text='View my work.' />
         </div>
       </div>
     </div>
