@@ -8,7 +8,7 @@ function Footer() {
   const isDark = isDarkTheme();
 
   return (
-    <footer className='w-full absolute inline-flex items-center justify-between bottom-0 p-5 dark:text-darkText'>
+    <footer className='w-full inline-flex items-center justify-between p-5 dark:text-darkText'>
       <p className='text-body'>Maxwell Jones</p>
       <ul className='inline-flex gap-3'>
         <li>
