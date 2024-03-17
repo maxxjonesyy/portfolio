@@ -21,7 +21,7 @@ function App() {
   }, [theme]);
 
   return (
-    <div className='min-h-screen flex flex-col'>
+    <div className='min-h-screen flex flex-col background-theme'>
       <Navbar theme={theme} setTheme={setTheme} />
 
       <AnimatePresence mode='wait'>

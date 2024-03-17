@@ -3,8 +3,8 @@ import transition from "../utils/transition";
 
 function Home() {
   return (
-    <div className='relative -top-10 flex flex-grow items-center justify-center dark:text-darkText'>
-      <div className='container-padding'>
+    <div className='container relative -top-10 flex flex-1 items-center justify-center dark:text-darkText'>
+      <div>
         <h1 className='text-subheading'>Hello my name is</h1>
         <h1 className='text-heading'>Maxwell Jones</h1>
         <h1 className='text-subheading'>
