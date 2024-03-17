@@ -1,16 +1,30 @@
-import transition from "../utils/transition";
-import portrait from "../assets/images/portrait.webp";
-import Resume from "../assets/Maxwell Jones Resume.pdf";
-
-import Skills from "../components/Skills";
-
-import { LinkButton } from "../components";
+import { useState } from "react";
+import isMobile from "../utils/isMobile";
+import isDarkTheme from "../utils/isDarkTheme";
 import GitHubCalendar from "react-github-calendar";
+import transition from "../utils/transition";
+
+import portrait from "../assets/images/portrait.webp";
+import arrow from "../assets/icons/arrow.svg";
+import arrowDark from "../assets/icons/arrow-dark.svg";
+import Resume from "../assets/Maxwell Jones Resume.pdf";
+import Skills from "../components/Skills";
+import { LinkButton } from "../components";
 
 function About() {
+  const [toggled, setToggled] = useState(isMobile());
+
+  window.addEventListener("resize", () => {
+    setToggled(isMobile());
+  });
+
+  function handleToggle(): void {
+    setToggled(!toggled);
+  }
+
   return (
-    <div className='container flex flex-1 items-center justify-evenly dark:text-darkText'>
-      <div className='grid gap-5 grid-cols-1 lg:grid-cols-2 my-10'>
+    <div className='container flex flex-1 items-center justify-center py-10 dark:text-darkText'>
+      <div className='grid gap-5 grid-cols-1 lg:grid-cols-2'>
         <div>
           <img
             className='w-full max-w-[350px] rounded-md mb-5'
@@ -34,22 +48,48 @@ function About() {
             <Skills />
           </div>
 
-          <div className='mt-10 max-w-[400px]'>
-            <p className='mb-5'>Github activity</p>
-            <GitHubCalendar
-              username='maxxjonesyy'
-              hideMonthLabels={true}
-              colorScheme='dark'
-              theme={{
-                dark: ["#84828f", "#4361ee"],
-              }}
-            />
+          <div className='relative mt-10 max-w-[400px]'>
+            <button
+              className='mb-5 inline-flex items-center justify-between w-1/2 px-5 py-2 rounded-md bg-white/40 backdrop-blur-xl shadow-md'
+              onClick={handleToggle}>
+              <p>Github activity</p>
+
+              <img
+                className={`${
+                  toggled
+                    ? "transition-theme rotate-90"
+                    : "transition-theme rotate-0"
+                }`}
+                src={isDarkTheme() ? arrowDark : arrow}
+                alt='collapsible arrow'
+                width={15}
+                height={15}
+              />
+            </button>
+
+            <div className='overflow-hidden'>
+              <div
+                className={`relative ${
+                  toggled
+                    ? "transition-theme -translate-y-0 h-auto"
+                    : "transition-theme -translate-y-[100%] h-0"
+                }`}>
+                <GitHubCalendar
+                  username='maxxjonesyy'
+                  hideMonthLabels={true}
+                  colorScheme='dark'
+                  theme={{
+                    dark: ["#84828f", "#4361ee"],
+                  }}
+                />
+              </div>
+            </div>
           </div>
         </div>
 
         <div>
-          <h1 className='text-heading mb-3'>About</h1>
-          <p className='text-body leading-8'>
+          <h1 className='text-heading mb-5'>About</h1>
+          <p className='text-body'>
             I'm a Sydney-based Frontend Developer, passionate about bringing
             conceptual web applications to life through code and continuously
             improving my craft.
