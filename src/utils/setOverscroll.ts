@@ -1,4 +1,4 @@
-import isDarkTheme from "./isDarkTheme";
+import { isDarkTheme } from "./index";
 
 function setOverScroll() {
     const isDark = isDarkTheme();

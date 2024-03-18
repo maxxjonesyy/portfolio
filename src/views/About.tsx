@@ -1,15 +1,12 @@
 import { useState } from "react";
-import isMobile from "../utils/isMobile";
-import isDarkTheme from "../utils/isDarkTheme";
 import GitHubCalendar from "react-github-calendar";
-import transition from "../utils/transition";
-
 import portrait from "../assets/images/portrait.webp";
-import arrow from "../assets/icons/arrow.svg";
-import arrowDark from "../assets/icons/arrow-dark.svg";
 import Resume from "../assets/Maxwell Jones Resume.pdf";
-import Skills from "../components/Skills";
-import { LinkButton } from "../components";
+
+import { transition, isDarkTheme, isMobile } from "../utils";
+import { Arrow, ArrowDark } from "../assets/icons";
+import { LinkButton, Skills } from "../components";
+
 
 function About() {
   const [toggled, setToggled] = useState(isMobile());
@@ -60,7 +57,7 @@ function About() {
                     ? "transition-theme rotate-90"
                     : "transition-theme rotate-0"
                 }`}
-                src={isDarkTheme() ? arrowDark : arrow}
+                src={isDarkTheme() ? ArrowDark : Arrow}
                 alt='collapsible arrow'
                 width={15}
                 height={15}

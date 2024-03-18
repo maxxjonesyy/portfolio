@@ -1,4 +1,4 @@
-import transition from "../utils/transition";
+import { transition } from "../utils";
 
 function Contact() {
   return <div>Contact</div>;

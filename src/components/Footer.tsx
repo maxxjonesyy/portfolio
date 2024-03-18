@@ -1,8 +1,5 @@
-import Github from "../assets/icons/github.svg";
-import GithubDark from "../assets/icons/github-dark.svg";
-import LinkedIn from "../assets/icons/linkedin.svg";
-import LinkedInDark from "../assets/icons/linkedin-dark.svg";
-import isDarkTheme from "../utils/isDarkTheme";
+import {Github, GithubDark, LinkedIn, LinkedInDark} from '../assets/icons';
+import { isDarkTheme } from '../utils';
 
 function Footer() {
   const isDark = isDarkTheme();

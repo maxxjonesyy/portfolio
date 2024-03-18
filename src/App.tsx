@@ -5,7 +5,7 @@ import { AnimatePresence } from "framer-motion";
 import { Home, About, Projects, Contact } from "./views/index";
 import { Navbar, Footer } from "./components/index";
 
-import setOverScroll from "./utils/setOverscroll";
+import { setOverScroll } from "./utils";
 
 function App() {
   const [theme, setTheme] = useState(localStorage.theme || "light");

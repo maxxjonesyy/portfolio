@@ -1,5 +1,5 @@
 import { LinkButton } from "../components";
-import transition from "../utils/transition";
+import { transition } from "../utils"; 
 
 function Home() {
   return (
