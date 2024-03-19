@@ -17,8 +17,8 @@ function About() {
   }
 
   return (
-    <div className='container flex flex-1 items-center justify-center py-10 dark:text-darkText'>
-      <div className='grid gap-5 grid-cols-1 lg:grid-cols-2'>
+    <div className='container flex flex-1 items-center justify-center dark:text-darkText'>
+      <div className='grid gap-10 md:gap-5 grid-cols-1 md:grid-cols-2'>
         <div>
           <img
             className='w-full max-w-[350px] rounded-md mb-5'
