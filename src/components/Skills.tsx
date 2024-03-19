@@ -8,7 +8,7 @@ import {
   typescript,
   php,
   git,
-} from "../assets/icons/skills";
+} from "../assets/index";
 
 function Skills() {
   const skills = [

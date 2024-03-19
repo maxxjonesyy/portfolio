@@ -1,12 +1,9 @@
 import { useState } from "react";
 import GitHubCalendar from "react-github-calendar";
-import portrait from "../assets/images/portrait.webp";
-import Resume from "../assets/Maxwell Jones Resume.pdf";
 
 import { transition, isDarkTheme, isMobile } from "../utils";
-import { Arrow, ArrowDark } from "../assets/icons";
+import { Arrow, ArrowDark, Resume, Portrait } from "../assets/index";
 import { LinkButton, Skills } from "../components";
-
 
 function About() {
   const [toggled, setToggled] = useState(isMobile());
@@ -25,7 +22,7 @@ function About() {
         <div>
           <img
             className='w-full max-w-[350px] rounded-md mb-5'
-            src={portrait}
+            src={Portrait}
             alt='portrait of myself'
             width={350}
             height={500}
