@@ -8,7 +8,7 @@
   }
 
   body {
-    @apply font-rubik box-border;
+    @apply box-border;
   }
 
   .text-heading {

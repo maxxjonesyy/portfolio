@@ -4,9 +4,6 @@ export default {
   darkMode: "class",
   theme: {
     extend: {
-      fontFamily: {
-        rubik: ["Rubik", "sans-serif"],
-      },
       colors: {
         accentText: "#4361ee",
         darkText: "#e5e7eb",
