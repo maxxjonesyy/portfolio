@@ -16,11 +16,11 @@
   }
 
   .text-subheading {
-    @apply text-3xl md:text-4xl transition-theme my-2;
+    @apply text-3xl md:text-4xl my-2;
   }
 
   .text-body {
-    @apply text-base transition-theme;
+    @apply text-base dark:text-darkText;
   }
 }
 
@@ -33,6 +33,10 @@
 @layer utilities {
   .transition-theme {
     @apply transition-all duration-300;
+  }
+
+  .background-glass {
+    @apply bg-white/40 dark:bg-white/10 backdrop-blur-xl shadow-md rounded-md;
   }
 
   .background-theme {

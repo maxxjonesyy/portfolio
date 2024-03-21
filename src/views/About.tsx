@@ -44,7 +44,7 @@ function About() {
 
           <div className='relative mt-10 max-w-[400px]'>
             <button
-              className='mb-5 inline-flex items-center justify-between w-1/2 px-5 py-2 rounded-md bg-white/40 backdrop-blur-xl shadow-md'
+              className='mb-5 inline-flex items-center justify-between w-1/2 px-5 py-2 background-glass'
               onClick={handleToggle}>
               <p>Github activity</p>
 
