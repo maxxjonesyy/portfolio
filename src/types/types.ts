@@ -10,3 +10,26 @@ export type LinkButton = {
   text: string;
   textSize?: string;
 };
+
+export type ProjectCardType = {
+  project: {
+    heading: string;
+    image: string;
+    description: string;
+    challenges: string;
+    website: string;
+    github: string;
+    technology: string[][];
+  };
+  setActiveProject: React.Dispatch<React.SetStateAction<Object>>;
+};
+
+export type FeaturedCardType = {
+  heading: string;
+  image: string;
+  description: string;
+  challenges: string;
+  website: string;
+  github: string;
+  technology: string[][];
+};
