@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import projectData from "../data/projectData.json";
 import { transition } from "../utils";
 import { FeaturedCardType } from "../types/types";
@@ -6,6 +6,10 @@ import { LinkButton, ProjectCard } from "../components";
 
 function Projects() {
   const [activeProject, setActiveProject] = useState<FeaturedCardType>();
+
+  useEffect(() => {
+    scrollTo(0, 0);
+  }, [activeProject]);
 
   return (
     <div className='container flex flex-1 items-center justify-center'>
