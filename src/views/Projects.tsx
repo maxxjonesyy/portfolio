@@ -48,7 +48,6 @@ function Projects() {
                 <p className='mt-3 mb-10'>{activeProject.challenges}</p>
 
                 <LinkButton
-                  download={false}
                   external={true}
                   route={activeProject.website}
                   text='View Website'
