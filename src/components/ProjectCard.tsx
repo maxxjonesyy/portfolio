@@ -21,12 +21,12 @@ function ProjectCard({ project, setActiveProject }: ProjectCardType) {
       <div>
         <h2
           className={`text-xl font-medium flex gap-3 transition-theme ${
-            hovered ? "text-accentText" : ""
+            hovered && "text-accentText"
           }`}>
           {project.heading}
           <span
             className={`-rotate-[130deg] transition-theme ${
-              hovered ? "-translate-y-1 text-accentText" : "-translate-y-0"
+              hovered && "-translate-y-1 text-accentText"
             }`}>
             &#8595;
           </span>
