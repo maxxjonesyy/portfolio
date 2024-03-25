@@ -12,8 +12,23 @@ import GithubDark from "../assets/icons/github-dark.svg";
 import Github from "../assets/icons/github.svg";
 import LinkedInDark from "../assets/icons/linkedin-dark.svg";
 import LinkedIn from "../assets/icons/linkedin.svg";
+import Phone from "../assets/icons/phone.svg";
+import PhoneDark from "../assets/icons/phone-dark.svg";
+import Email from "../assets/icons/email.svg";
+import EmailDark from "../assets/icons/email-dark.svg";
 
-export { ArrowDark, Arrow, GithubDark, Github, LinkedInDark, LinkedIn };
+export {
+  ArrowDark,
+  Arrow,
+  GithubDark,
+  Github,
+  LinkedInDark,
+  LinkedIn,
+  Phone,
+  PhoneDark,
+  Email,
+  EmailDark,
+};
 
 import html from "../assets/icons/skills/html.svg";
 import css from "../assets/icons/skills/css.svg";

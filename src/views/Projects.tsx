@@ -32,7 +32,7 @@ function Projects() {
               <img
                 className='rounded-md shadow-xl'
                 src={activeProject.image}
-                alt='featured project'
+                alt='Featured project'
                 width={600}
                 height={600}
               />

@@ -11,18 +11,20 @@ function Footer() {
         <li>
           <a href='https://github.com/maxxjonesyy' target='_blank'>
             <img
-              className='w-[1.35rem] h-[1.35rem] md:w-[1.75rem] md:h-[1.75rem] transition-theme'
               src={isDark ? GithubDark : Github}
-              alt='Github'
+              alt='Github icon'
+              width={25}
+              height={25}
             />
           </a>
         </li>
         <li>
           <a href='https://www.linkedin.com/in/maxxjonesyy/' target='_blank'>
             <img
-              className='w-[1.35rem] h-[1.35rem] md:w-[1.75rem] md:h-[1.75rem] transition-theme'
               src={isDark ? LinkedInDark : LinkedIn}
-              alt='LinkedIn'
+              alt='LinkedIn icon'
+              width={25}
+              height={25}
             />
           </a>
         </li>

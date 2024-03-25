@@ -14,7 +14,7 @@ function ProjectCard({ project, setActiveProject }: ProjectCardType) {
       <img
         className='rounded-md shadow-xl'
         src={project.image}
-        alt='featured project'
+        alt='Featured project'
         width={450}
         height={450}
       />

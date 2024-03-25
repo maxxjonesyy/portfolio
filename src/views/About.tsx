@@ -23,7 +23,7 @@ function About() {
           <img
             className='w-full max-w-[350px] rounded-md mb-5'
             src={Portrait}
-            alt='portrait of myself'
+            alt='Portrait of myself'
             width={350}
             height={500}
             loading='eager'
@@ -55,7 +55,7 @@ function About() {
                     : "transition-theme rotate-0"
                 }`}
                 src={isDarkTheme() ? ArrowDark : Arrow}
-                alt='collapsible arrow'
+                alt='Collapsible arrow'
                 width={15}
                 height={15}
               />
