@@ -12,7 +12,7 @@
   }
 
   .text-heading {
-    @apply text-accentText font-bold text-5xl lg:text-6xl transition-theme;
+    @apply text-accentText font-bold text-5xl md:text-7xl  transition-theme;
   }
 
   .text-subheading {
