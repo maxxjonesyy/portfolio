@@ -38,7 +38,7 @@ function Contact() {
         Some simple, click to copy details if you wish.
       </p>
 
-      <div className='background-glass flex flex-wrap gap-5 p-5 mt-5'>
+      <div className='background-glass flex flex-wrap justify-center md:justify-normal gap-5 p-5 mt-5'>
         <button
           className='text-body flex items-center gap-2 hover:opacity-60'
           aria-label='Copy my phone number to clipboard'
