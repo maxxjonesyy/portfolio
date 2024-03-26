@@ -7,7 +7,7 @@ function ProjectCard({ project, setActiveProject }: ProjectCardType) {
 
   return (
     <div
-      className='grid grid-cols-1 md:grid-cols-2 items-center gap-5 transition-theme hover:background-glass text-body p-3 cursor-pointer'
+      className='grid grid-cols-1 md:grid-cols-2 items-center gap-5 hover:background-glass text-body p-3 cursor-pointer'
       onClick={() => setActiveProject(project)}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}>
