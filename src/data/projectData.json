@@ -1,7 +1,7 @@
 [
     {
         "heading": "Gmail Unsubscriber",
-        "image": "src/assets/images/projects/unsubby.webp",
+        "image": "./src/assets/images/projects/unsubby.webp",
         "description": "Unsubby groups together unsubscribe links for Gmail, making it easy for you to identify and remove pesky subscriptions with just a few clicks.",
         "challenges": "Gaining a solid comprehension of the Gmail API and configuring Supabase took some initial reading to kick-start my understanding. Another significant challenge was getting permission for the sensitive scopes I am using, I chose to not pursue this and have Unsubby as an invite only project.",
         "website": "https://unsubby-ts.netlify.app/",
