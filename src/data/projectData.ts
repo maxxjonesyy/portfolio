@@ -3,6 +3,7 @@ import { Unsubby, ShiftworkBuddy, Maxcord, Spotify, FarrugiaDesign } from "../as
 
 const Projects: Project[] =  [
     {
+        id: 1,
         heading: "Gmail Unsubscriber",
         image: Unsubby,
         description: "Unsubby groups together unsubscribe links for Gmail, making it easy for you to identify and remove pesky subscriptions with just a few clicks.",
@@ -19,6 +20,7 @@ const Projects: Project[] =  [
         ]
     },
     {
+        id: 2,
         heading: "Finance WebApp",
         image: ShiftworkBuddy,
         description: "A finance app I made for my shiftwork colleagues that uses Firebase and React. It stores shift data (start and finish time) and from there calculates the hours you've worked, your tax, and expected income.",
@@ -34,6 +36,7 @@ const Projects: Project[] =  [
         ]
     },
     {
+        id: 3,
         heading: "Chat App",
         image: Maxcord,
         description: "With inspiration from an app I use all the time, Discord. I wanted to create a similar thing in React, I used contextAPI to pass around global state, react state to store and loop over channels and messages in realtime, and firebase for the database and user authentication.",
@@ -50,6 +53,7 @@ const Projects: Project[] =  [
         ]
     },
     {
+        id: 4,
         heading: "Interior Design Site",
         image: FarrugiaDesign,
         description: "An interior design website i created for a client. This project was my introductory to React and showed me the world of NPM modules, some i used on this project were, Material UI, React Router DOM, SweetAlert, EmailJS, SlickCarousel.",
@@ -68,6 +72,7 @@ const Projects: Project[] =  [
         ]
     },
     {
+        id: 5,
         heading: "Spotify Dashboard",
         image: Spotify,
         description: "Small web app I created with the Spotify API. It's a very simple application that displays some of the users information [Playlists, Top artists, Recently played]. A search feature has also been incorporated displaying [Top search, Songs, Recommended artists, Top search albums], TailwindCSS and ReactJS were used on this project.",
