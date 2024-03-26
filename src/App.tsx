@@ -15,21 +15,21 @@ function App() {
     setOverScroll();
     document.body.className = theme;
 
-    if (!localStorage.theme) {
+    if (!localStorage.theme || localStorage.theme !== theme) {
       localStorage.setItem("theme", theme);
     }
   }, [theme]);
 
   return (
-    <div className='min-h-screen flex flex-col background-theme'>
+    <div className="min-h-screen flex flex-col background-theme">
       <Navbar theme={theme} setTheme={setTheme} />
 
-      <AnimatePresence mode='wait'>
+      <AnimatePresence mode="wait">
         <Router location={location} key={location.pathname}>
-          <Route path='/' element={<Home />} />
-          <Route path='/about' element={<About />} />
-          <Route path='/projects' element={<Projects />} />
-          <Route path='/contact' element={<Contact />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} />
         </Router>
       </AnimatePresence>
       <Footer />
