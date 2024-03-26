@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import projectData from "../data/projectData.json";
+import projectData from "../data/projectData";
 import { transition } from "../utils";
 import { FeaturedCardType } from "../types/types";
 import { LinkButton, ProjectCard } from "../components";

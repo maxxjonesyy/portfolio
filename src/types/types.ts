@@ -11,6 +11,16 @@ export type LinkButton = {
   textSize?: string;
 };
 
+export type Project = {
+  heading: string;
+  image: string;
+  description: string;
+  challenges: string;
+  website: string;
+  github: string;
+  technology: string[][];
+};
+
 export type ProjectCardType = {
   project: {
     heading: string;
