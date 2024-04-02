@@ -67,9 +67,9 @@ function Projects() {
           </div>
         ) : (
           <div className='grid grid-cols-1 gap-24 lg:gap-38'>
-            {projectData.map((project, index) => (
+            {projectData.map((project) => (
               <ProjectCard
-                key={index}
+                key={project.id}
                 project={project}
                 setActiveProject={
                   setActiveProject as React.Dispatch<
