@@ -2,13 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Hide overscroll on GitHub Calendar package */
+.styles-module_scrollContainer__-bJC8 {
+  max-width: 100%;
+}
+
 @layer base {
   html {
     @apply scroll-smooth;
   }
 
   body {
-    @apply box-border;
+    @apply box-border overflow-x-hidden;
   }
 
   .text-heading {
