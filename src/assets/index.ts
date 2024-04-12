@@ -3,13 +3,11 @@ import Resume from "./files/Maxwell Jones Resume.pdf";
 export { Resume };
 
 import Portrait from "./images/portrait.webp";
-import FarrugiaDesign from "./images/farrugiadesign.webp";
-import Maxcord from "./images/maxcord.webp";
 import ShiftworkBuddy from "./images/shiftworkbuddy.webp";
 import Unsubby from "./images/unsubby.webp";
 import Spotify from "./images/spotify.webp";
 
-export { Portrait, FarrugiaDesign, Maxcord, ShiftworkBuddy, Unsubby, Spotify };
+export { Portrait, ShiftworkBuddy, Unsubby, Spotify };
 
 import ArrowDark from "../assets/icons/arrow-dark.svg";
 import Arrow from "../assets/icons/arrow.svg";
