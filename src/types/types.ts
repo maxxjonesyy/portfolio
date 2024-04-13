@@ -12,7 +12,7 @@ export type LinkButton = {
 };
 
 export type Project = {
-  id: number,
+  id: number;
   heading: string;
   image: string;
   description: string;
