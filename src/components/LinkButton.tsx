@@ -1,4 +1,4 @@
-import type { LinkButton } from "../types/types";
+import { LinkButton } from "../types/types";
 import { Link } from "react-router-dom";
 
 function LinkButton({ download, route, external, text, textSize }: LinkButton) {
