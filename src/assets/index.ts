@@ -1,4 +1,4 @@
-import Resume from "./files/Max Jones Resume.pdf";
+import Resume from "../assets/files/Resume.pdf";
 
 export { Resume };
 
