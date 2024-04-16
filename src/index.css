@@ -4,7 +4,9 @@
 
 /* Hide overscroll on GitHub Calendar package */
 .styles-module_scrollContainer__-bJC8 {
-  max-width: 100%;
+  max-width: 100% !important;
+  overflow-x: unset !important;
+  overflow-y: unset !important;
 }
 
 @layer base {
