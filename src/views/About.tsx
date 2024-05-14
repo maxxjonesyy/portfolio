@@ -81,7 +81,7 @@ function About() {
                   hideMonthLabels={true}
                   colorScheme='dark'
                   theme={{
-                    dark: ["#84828f", "#4361ee"],
+                    dark: ["#AAB6E9", "#2E50EB"],
                   }}
                 />
               </div>
