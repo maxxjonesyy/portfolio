@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 import GitHubCalendar from "react-github-calendar";
 
 import { transition, isDarkTheme, isMobile } from "../utils";
-import { Arrow, ArrowDark, Resume, Portrait } from "../assets/index";
-import { LinkButton, Skills } from "../components";
+import { Arrow, ArrowDark, Portrait } from "../assets/index";
+import { Skills } from "../components";
 
 function About() {
   const [toggled, setToggled] = useState(isMobile());
@@ -37,13 +37,13 @@ function About() {
             loading='eager'
           />
 
-          <LinkButton
+          {/* <LinkButton
             download={true}
             route={Resume}
             external={true}
             text='Download Resume'
             textSize='text-sm'
-          />
+          /> */}
 
           <p className='mt-5'>Languages, libraries & tools I use</p>
           <div className='max-w-[400px] grid grid-cols-3 gap-2 mt-3'>

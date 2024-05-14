@@ -1,7 +1,3 @@
-import Resume from "../assets/files/Resume.pdf";
-
-export { Resume };
-
 import Portrait from "./images/portrait.webp";
 import ShiftworkBuddy from "./images/shiftworkbuddy.webp";
 import Unsubby from "./images/unsubby.webp";
