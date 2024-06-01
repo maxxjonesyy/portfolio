@@ -37,14 +37,6 @@ function About() {
             loading='eager'
           />
 
-          {/* <LinkButton
-            download={true}
-            route={Resume}
-            external={true}
-            text='Download Resume'
-            textSize='text-sm'
-          /> */}
-
           <p className='mt-5'>Languages, libraries & tools I use</p>
           <div className='max-w-[400px] grid grid-cols-3 gap-2 mt-3'>
             <Skills />
