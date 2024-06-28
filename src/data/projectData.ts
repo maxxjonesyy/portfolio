@@ -17,7 +17,7 @@ const Projects: Project[] = [
       ["Tailwind"],
       ["Typescript"],
       ["React.js"],
-      ["NodeJS"],
+      ["Node.js"],
       ["MongoDB"],
       ["Express.js"],
       ["JWT (JSON Web Token)"],
