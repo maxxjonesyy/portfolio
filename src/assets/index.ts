@@ -2,8 +2,9 @@ import Portrait from "./images/portrait.webp";
 import ShiftworkBuddy from "./images/shiftworkbuddy.webp";
 import Unsubby from "./images/unsubby.webp";
 import Spotify from "./images/spotify.webp";
+import Taskhub from "./images/taskhub.webp";
 
-export { Portrait, ShiftworkBuddy, Unsubby, Spotify };
+export { Portrait, ShiftworkBuddy, Unsubby, Spotify, Taskhub };
 
 import ArrowDark from "../assets/icons/arrow-dark.svg";
 import Arrow from "../assets/icons/arrow.svg";
